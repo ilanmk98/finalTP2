@@ -13,7 +13,10 @@ class Servicio {
         const error = this.validarVoto(voto);
         if(error==='')
         {
-            await this.model.cargarVoto(voto)
+            let votoValidado={}
+            votoValidado.candidato=voto.candidato
+            votoValidado.distrito=voto.distrito
+            await this.model.cargarVoto(votoValidado)
         }
         else
         {
