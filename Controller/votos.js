@@ -13,13 +13,12 @@ class Controlador{
         }
         catch(error)
         {
-            res.status(400).json({ errorMsg: error });
+            res.status(400).json({ error: error });
         }
     }
 
     obtenerVotos = async(req,res)=>{
         const votos = await this.servicio.obtenerVotos()
-        console.log(votos);
         res.json(votos)
     }
 

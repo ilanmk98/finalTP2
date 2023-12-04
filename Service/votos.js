@@ -30,8 +30,7 @@ class Servicio {
     }
 
     validarVoto=(voto)=>{
-        let errorMsg="";
-       
+        let errorMsg='';
         if(!this.distritosValidos.includes(voto.distrito))
         {
             errorMsg=errorMsg+"Zona no correspondiente||"

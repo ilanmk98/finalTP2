@@ -1,5 +1,7 @@
 Entrega de examen final TP2.
 
+Las consignas realizadas fueron 1A y 1C
+
 El mismo esta configurado para correr sobre el puerto 8081.
 
 El programa cuenta con dos scripts: start y watch.
@@ -17,6 +19,6 @@ Si el objeto voto tiene atributos que no sean los mencionados aca arriba, los mi
 
 El endpoint devuelve un 200 cuando la informacion cargada es correcta y un 400 con un mensaje explicando cual fue el error.
 
-/obtenerVotos de tipo GET: Este endpoint no recibe parametros y trae todos los votos, incluida su zona.
+/obtenerVotos de tipo GET: Este endpoint no recibe parametros y devuelve todos los votos, incluida su zona junto a un codigo 200.
 
-/obtenerVotosGenerales de tipo GET: Este endpoint no recibe parametros y muestra un objeto donde se especifican cuantos votos obtuvo cada opcion de candidato al momento de ser llamado el mismo.
+/obtenerVotosGenerales de tipo GET: Este endpoint no recibe parametros y muestra un objeto donde se especifican cuantos votos obtuvo cada opcion de candidato al momento de ser llamado el mismo junto a un codigo 200.
